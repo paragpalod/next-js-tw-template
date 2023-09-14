@@ -1,4 +1,4 @@
-import { useCallback, useState } from 'react';
+import React, { useCallback } from 'react';
 
 import Image from 'next/image';
 

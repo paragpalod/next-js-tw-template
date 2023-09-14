@@ -15,6 +15,7 @@
   "lint-staged": {
     "package.json": "",
     ".gitignore": "",
+    ".vscode/*": "",
     "*": "eslint --max-warnings 0"
   },
   "dependencies": {

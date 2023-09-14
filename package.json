@@ -3,12 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -p 3001",
+    "dev:next": "next dev -p 3001",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky install",
-    "pre-commit": "lint-staged"
+    "pre-commit": "lint-staged",
+    "lint:watch": "esw --watch 'src/**/*.{js,jsx}' --cache",
+    "dev": "concurrently \"npm run dev:next\" \"npm run lint:watch\""
   },
   "lint-staged": {
     "package.json": "",
@@ -20,6 +22,7 @@
   },
   "devDependencies": {
     "autoprefixer": "10.4.15",
+    "concurrently": "^8.2.1",
     "eslint": "8.49.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-next": "13.4.19",
@@ -29,6 +32,7 @@
     "eslint-plugin-react-refresh": "^0.4.3",
     "eslint-plugin-sonarjs": "^0.21.0",
     "eslint-plugin-tailwindcss": "^3.13.0",
+    "eslint-watch": "^8.0.0",
     "husky": "^8.0.3",
     "lint-staged": "^14.0.1",
     "next": "13.4.19",

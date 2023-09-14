@@ -10,10 +10,7 @@
   },
   "lint-staged": {
     "package.json": "",
-    "*": [
-      "eslint --quiet",
-      "eslint --quiet --max-warnings 0"
-    ]
+    "*": "eslint --quiet --max-warnings 0"
   },
   "husky": {
     "hooks": {

@@ -21,41 +21,27 @@
     "javascript": "javascript",
     "html": "html"
   },
-  "editor.quickSuggestions": {
-    "strings": true
-  },
   "files.associations": {
     "*.css": "tailwindcss"
   },
+  "tailwindCSS.experimental.configFile": "tailwind.config.js",
+  "editor.quickSuggestions": {
+    "strings": true
+  },
   "eslint.alwaysShowStatus": true,
   "files.exclude": {
-    ".vscode/common.code-snippets": true,
-    ".vscode/react.code-snippets": true,
-    ".vscode/extensions.json": true,
-    "**/.git": true,
-    ".editorconfig": false,
-    ".env.local": false,
     ".eslintrc.js": false,
     ".eslintcache": true,
-    ".eslintignore": true,
     ".gitignore": true,
-    "buildspec.yml": true,
-    "craco.config.js": true,
-    "Dockerfile": true,
-    "jsconfig.json": false,
     "README.md": true,
-    "tailwind.config.js": false,
-    "CONTRIBUTING.md": true,
     "dependency-graph.svg": true,
     ".dependency-cruiser.js": true,
     "package-lock.json": true,
     ".next": true,
     "node_modules": true,
-    "nginx": false,
-    "build": true
   },
   "git.branchProtection": [
-    "master"
+    "main"
   ],
   "editor.tabSize": 2
 }

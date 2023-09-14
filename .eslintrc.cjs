@@ -16,7 +16,6 @@ module.exports = {
   extends: [
     'airbnb',
     'prettier',
-    'plugin:react-hooks/recommended',
     'plugin:sonarjs/recommended',
     'plugin:tailwindcss/recommended',
     'next',

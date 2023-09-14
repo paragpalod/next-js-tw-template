@@ -6,13 +6,19 @@
     "dev": "next dev -p 3001",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "prepare": "husky install",
-    "pre-commit": "lint-staged"
+    "lint": "next lint"
   },
   "lint-staged": {
     "package.json": "",
-    "*": "eslint --max-warnings 0"
+    "*": [
+      "eslint --quiet",
+      "eslint --quiet --max-warnings 0"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "dependencies": {
     "react": "18.2.0",

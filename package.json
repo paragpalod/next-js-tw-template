@@ -13,10 +13,7 @@
     "dev": "concurrently \"npm run dev:next\" \"npm run lint:watch\""
   },
   "lint-staged": {
-    "package.json": "",
-    ".gitignore": "",
-    ".vscode/*": "",
-    "*": "eslint --max-warnings 0"
+    "*/.js": "eslint --max-warnings 0"
   },
   "dependencies": {
     "react": "18.2.0",

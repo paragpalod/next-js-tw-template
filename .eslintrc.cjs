@@ -12,7 +12,14 @@ module.exports = {
       jsx: true,
     },
   },
-  ignorePatterns: ['node_modules/', 'build/', '.git/', '.husky/', '.next/'],
+  ignorePatterns: [
+    'node_modules/',
+    'build/',
+    '.git/',
+    '.husky/',
+    '.next/',
+    '.gitignore',
+  ],
   env: { browser: true, es2021: true },
   extends: [
     'airbnb',

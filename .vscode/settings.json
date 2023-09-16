@@ -5,7 +5,6 @@
   "autoimport.sourceRoot": "./src",
   "javascript.preferences.importModuleSpecifier": "non-relative",
   "javascript.suggest.autoImports": true,
-  "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
@@ -16,9 +15,16 @@
     "editor.defaultFormatter": null,
     "editor.formatOnSave": false
   },
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features",
+    "editor.formatOnSave": true
+  },
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "file",
   "eslint.codeAction.showDocumentation": {
     "enable": true
   },
+  "tailwindCSS.rootFontSize": 10,
   "tailwindCSS.includeLanguages": {
     "css": "css",
     "javascript": "javascript",
@@ -46,5 +52,6 @@
   "git.branchProtection": [
     "main"
   ],
-  "editor.tabSize": 2
+  "editor.tabSize": 2,
+  "eslint.codeActionsOnSave.rules": null
 }
